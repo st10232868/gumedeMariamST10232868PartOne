@@ -16,7 +16,9 @@ namespace gumedeMariamST10232868PartOne
             Console.Write("{0}\n  **  WELCOME TO THE RECIPE COMMAND LINE APPLICATION!! ** \n{0} "
                     , "=======================================================================",Console.ForegroundColor);
 
-
+            //prompting the user to enter the number of ingredients
+            Console.Write("Please enter the number of ingredients: ");
+            int numOfIngredients = Convert.ToInt32(Console.ReadLine());
 
             Console.ReadKey();
         }
