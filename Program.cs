@@ -40,6 +40,8 @@ namespace gumedeMariamST10232868PartOne
                 //prompting the user to enter the number of steps 
                 Console.Write("\nPlease enter the number of steps the recipe has: ");
                 ingredient.NumOfSteps = Convert.ToInt32(Console.ReadLine());
+                //prompting the user to enter the description
+                Console.Write("Please Enter a Description of each step: \n");
 
 
 
