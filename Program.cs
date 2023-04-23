@@ -24,7 +24,9 @@ namespace gumedeMariamST10232868PartOne
             //prompting the user to enter the number of ingredients
             Console.Write("Please enter the number of ingredients: ");
             int numOfIngredients = Convert.ToInt32(Console.ReadLine());
-
+            //declaring and prompting the user to enter the name of the recipe
+            Console.WriteLine("Pleasen enter the name of the recipe");
+            String recipeName = Console.ReadLine();
             //creating a for loop 
             for (int  i = 0;  i < numOfIngredients;  i++)
             {
@@ -48,6 +50,8 @@ namespace gumedeMariamST10232868PartOne
                     Console.WriteLine("Step : {0}", (j + 1));
                     ingredient.Description = Console.ReadLine();
                 }
+                //passing values to the constructor
+                ingredient = new IngredientData(recipeName, ingredient.IngredientName, ingredient.Quantity, ingredient.MeasurementUnit, ingredient.NumOfSteps, ingredient.Description);
 
 
 
