@@ -39,6 +39,12 @@ namespace gumedeMariamST10232868PartOne
             get { return descrip; }
             set { descrip = value; }
         }
+        //creating a getter and setter for unit of measurement
+        public String MeasurementUnit //property
+        {
+            get { return unitOfMeasurement; }
+            set { unitOfMeasurement = value; }
+        }
 
 
 
