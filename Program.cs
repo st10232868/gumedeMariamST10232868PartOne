@@ -34,6 +34,10 @@ namespace gumedeMariamST10232868PartOne
                 //prompting the user to enter the quantity of the ingredients    
                 Console.Write("Please enter the quantity of the ingredient: ");
                 ingredient.Quantity = Convert.ToInt32(Console.ReadLine());
+                //prompting the user to enter the unit of measurement
+                Console.Write("Please enter the unit of measurment: ");
+                ingredient.MeasurementUnit = Console.ReadLine();
+
 
 
 
