@@ -20,6 +20,12 @@ namespace gumedeMariamST10232868PartOne
             Console.Write("Please enter the number of ingredients: ");
             int numOfIngredients = Convert.ToInt32(Console.ReadLine());
 
+            //creating a for loop 
+            for (int  i = 0;  i < numOfIngredients;  i++)
+            {
+                    
+
+            }
             Console.ReadKey();
         }
     }
