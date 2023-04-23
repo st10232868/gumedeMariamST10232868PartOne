@@ -13,5 +13,12 @@ namespace gumedeMariamST10232868PartOne
         private int numOfIngredients, quantity, numOfSteps, option = 0;//field
         private string nameOfIngredient, descrip, name;//field
         private String unitOfMeasurement;//field
+
+        //creating a default constructor
+        public IngredientData()
+        {
+
+        }
+
     }
 }
