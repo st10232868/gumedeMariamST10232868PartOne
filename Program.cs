@@ -28,7 +28,11 @@ namespace gumedeMariamST10232868PartOne
             //creating a for loop 
             for (int  i = 0;  i < numOfIngredients;  i++)
             {
-                
+                //prompting the user to enter the name of the ingredients
+                Console.Write("Please enter the name of the ingredient: ");
+                ingredient.IngredientName = Console.ReadLine();//calling the setter and setting the ingredient name to user input
+
+
 
             }
             Console.ReadKey();
