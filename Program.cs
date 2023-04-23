@@ -31,6 +31,10 @@ namespace gumedeMariamST10232868PartOne
                 //prompting the user to enter the name of the ingredients
                 Console.Write("Please enter the name of the ingredient: ");
                 ingredient.IngredientName = Console.ReadLine();//calling the setter and setting the ingredient name to user input
+                //prompting the user to enter the quantity of the ingredients    
+                Console.Write("Please enter the quantity of the ingredient: ");
+                ingredient.Quantity = Convert.ToInt32(Console.ReadLine());
+
 
 
 
