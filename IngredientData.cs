@@ -26,6 +26,13 @@ namespace gumedeMariamST10232868PartOne
             get { return numOfIngredients; }
             set { numOfIngredients = value; }
         }
+        //creating a getter and setter for the ingredient name
+        public String IngredientName//property
+        {
+            get { return nameOfIngredient; }
+            set { nameOfIngredient = value; }
+
+        }
 
 
     }
