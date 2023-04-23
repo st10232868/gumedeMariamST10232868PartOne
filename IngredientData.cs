@@ -51,7 +51,12 @@ namespace gumedeMariamST10232868PartOne
             get { return quantity; }
             set { quantity = value; }
         }
-
+        //creating an getter and setter for number of steps
+        public int NumOfSteps//property
+        {
+            get { return numOfSteps; }
+            set { numOfSteps = value; }
+        }
 
 
     }
