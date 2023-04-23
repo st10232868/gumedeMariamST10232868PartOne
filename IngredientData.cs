@@ -57,6 +57,17 @@ namespace gumedeMariamST10232868PartOne
             get { return numOfSteps; }
             set { numOfSteps = value; }
         }
+        //creating a parametized constructor
+        public IngredientData(string recipeName, string nameOfIngredient, int quantity, string unitOfMeasurement, int numOfSteps, String descrip)
+        {   //creating an instance of itself
+            this.quantity = quantity;
+            this.numOfSteps = numOfSteps;
+            this.recipeName = recipeName;
+            this.nameOfIngredient = nameOfIngredient;
+            this.descrip = descrip;
+            this.unitOfMeasurement = unitOfMeasurement;
+        }
+
         //creating a display methods to display user output
         public String ToString()
         {
