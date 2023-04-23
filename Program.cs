@@ -37,6 +37,9 @@ namespace gumedeMariamST10232868PartOne
                 //prompting the user to enter the unit of measurement
                 Console.Write("Please enter the unit of measurment: ");
                 ingredient.MeasurementUnit = Console.ReadLine();
+                //prompting the user to enter the number of steps 
+                Console.Write("\nPlease enter the number of steps the recipe has: ");
+                ingredient.NumOfSteps = Convert.ToInt32(Console.ReadLine());
 
 
 
