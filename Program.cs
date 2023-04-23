@@ -10,6 +10,11 @@ namespace gumedeMariamST10232868PartOne
     {
         static void Main(string[] args)
         {
+            //creating an instance of an object (the IngredientData class)
+            IngredientData ingredient = new IngredientData();
+
+
+
             // Set the Foreground color to DarkMagenta
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             // Display Foreground color DarkMagenta
@@ -23,7 +28,7 @@ namespace gumedeMariamST10232868PartOne
             //creating a for loop 
             for (int  i = 0;  i < numOfIngredients;  i++)
             {
-                    
+                
 
             }
             Console.ReadKey();
