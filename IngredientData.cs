@@ -45,6 +45,12 @@ namespace gumedeMariamST10232868PartOne
             get { return unitOfMeasurement; }
             set { unitOfMeasurement = value; }
         }
+        //creating a getter and setter for quantity
+        public int Quantity//property
+        {
+            get { return quantity; }
+            set { quantity = value; }
+        }
 
 
 
