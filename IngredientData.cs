@@ -33,6 +33,13 @@ namespace gumedeMariamST10232868PartOne
             set { nameOfIngredient = value; }
 
         }
+        //creating a getter and setter for Description
+        public String Description//property
+        {
+            get { return descrip; }
+            set { descrip = value; }
+        }
+
 
 
     }
