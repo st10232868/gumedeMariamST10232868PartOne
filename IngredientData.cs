@@ -19,6 +19,14 @@ namespace gumedeMariamST10232868PartOne
         {
 
         }
+        /**creating getters and setters for the option,
+       nameOfIngredient,quantity,descrip and unitOfMeasurement **/
+        public int NumOfIngredients//property
+        {
+            get { return numOfIngredients; }
+            set { numOfIngredients = value; }
+        }
+
 
     }
 }
