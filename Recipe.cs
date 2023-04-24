@@ -11,5 +11,12 @@ namespace gumedeMariamST10232868PartOne
         private List<IngredientData> ingredients;
         private List<string> descriptions;
 
+        //creating a default constructor
+        public Recipe() 
+        {
+        }
+        //creating a con
+
+
     }
 }
