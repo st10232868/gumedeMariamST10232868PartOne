@@ -8,8 +8,8 @@ namespace gumedeMariamST10232868PartOne
 {
     class Recipe
     {   //creating arraylist
-        private List<IngredientData> ingredients;
-        private List<string> descriptions;
+        private List<IngredientData> arrIngredients;
+        private List<string> arrDescriptions;
         //creating an instance of an object (the IngredientData class)
         IngredientData ingredient = new IngredientData();
 
@@ -17,8 +17,8 @@ namespace gumedeMariamST10232868PartOne
         //creating a constructor
         public Recipe()
         {
-            ingredients = new List<IngredientData>();
-            descriptions = new List<string>();
+            arrIngredients = new List<IngredientData>();
+            arrDescriptions = new List<string>();
         }
         //creating a method that adds an ingredient
         public void AddIngredients()
@@ -46,6 +46,12 @@ namespace gumedeMariamST10232868PartOne
 
             }
         }
+            //creating a parametized method that adds descriptions based on the number of steps
+            public void AddStep(String description)
+            {
+            arrDescriptions.Add(description);
+            }
+        
     }
 }
 
