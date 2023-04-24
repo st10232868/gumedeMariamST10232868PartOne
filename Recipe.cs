@@ -48,10 +48,16 @@ namespace gumedeMariamST10232868PartOne
                 ingredient.NumOfSteps = Convert.ToInt32(Console.ReadLine());
                 //prompting the user to enter the description
                 Console.Write("Please Enter a Description of each step: \n");
-                
+                //creating a for loop to loop
+                for (int j = 0; j < ingredient.NumOfSteps; j++)
+                {
+                    Console.WriteLine("Step : {0}", (j + 1));
+                    ingredient.Description = Console.ReadLine();
+                }
+
             }
 
-        
+
         }
             //creating a parametized method that adds descriptions based on the number of steps
             public void AddStep(String description)
