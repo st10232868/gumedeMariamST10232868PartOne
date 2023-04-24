@@ -9,7 +9,7 @@ namespace gumedeMariamST10232868PartOne
     class IngredientData
     {
 
-        //declaring variables
+        //declaring variables 
         private int numOfIngredients, quantity, numOfSteps, option = 0;//field
         private string nameOfIngredient, descrip, name,recipeName;//field
         private String unitOfMeasurement;//field
@@ -19,6 +19,7 @@ namespace gumedeMariamST10232868PartOne
         {
 
         }
+
         /**creating getters and setters for the option,
        nameOfIngredient,quantity,descrip and unitOfMeasurement **/
         public int NumOfIngredients//property
