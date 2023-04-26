@@ -34,8 +34,8 @@ namespace gumedeMariamST10232868PartOne
                 else if (option == 2)
                 {
                     Console.WriteLine("Are you sure you'd like to Change the scale factor? \nEnter 'Y' or 'N'");
-                    String clear = Console.ReadLine().ToUpper();
-                    if (clear.Equals("Y"))
+                    String option1 = Console.ReadLine().ToUpper();
+                    if (option1.Equals("Y"))
                     {
                         Console.WriteLine("\nChange Scale Factor by selecting an option by entering a number next to the option: \n");
                     Console.WriteLine("(1) {0}\n(2) {1}\n(3) {2}", "Half", "Double", "Triple");
@@ -52,7 +52,7 @@ namespace gumedeMariamST10232868PartOne
                 }
                 else if (option == 3)
                 {
-
+                    
                 }
                 else if (option == 4)
                 {
@@ -61,6 +61,7 @@ namespace gumedeMariamST10232868PartOne
                     if (clear.Equals("Y"))
                     {
                         recipes.ClearRecipe();
+                        recipes.EnterIngredients();
                     }
                     else
                     {

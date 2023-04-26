@@ -13,7 +13,7 @@ namespace gumedeMariamST10232868PartOne
         private int numOfIngredients, quantity, numOfSteps;//field
         private string nameOfIngredient, descrip;//field
         private String unitOfMeasurement;//field
-
+        
         //creating a default constructor
         public IngredientData()
         {
@@ -59,16 +59,7 @@ namespace gumedeMariamST10232868PartOne
             set { numOfSteps = value; }
         }
        
-        //creating a display methods to display user output
-        public String ToString()
-        {
-            string ingredient = string.Format("\n\nRecipe For\t\t\t :  \nIngredient Name\t\t\t : {1}\nQuantity\t\t\t : " +
-                "{2}\nUnit of Measurement\t\t : {3}\nDirections\t\t\t : {4}\n\n",
-                 IngredientName, Quantity, MeasurementUnit, Description);
-
-            return (ingredient);
-        }
-
+        
 
     }
 }

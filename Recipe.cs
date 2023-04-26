@@ -15,6 +15,7 @@ namespace gumedeMariamST10232868PartOne
         public static ArrayList arrQuantity = new ArrayList();
         public static ArrayList arrDescription = new ArrayList();
         public static ArrayList arrUnit = new ArrayList();
+        public static ArrayList arrScaledFactor = new ArrayList();
         //creating a constructor
         public Recipe()
         {
@@ -61,9 +62,9 @@ namespace gumedeMariamST10232868PartOne
                 // Set the Foreground color to cyan
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 // Display Foreground color cyan
-                Console.Write("\n{0}\n  ~~ Ingredient Details have been saved successfully!!\nHERE IS WHAT YOU ENTERED ~~  \n{0}\n ",
+                Console.Write("\n{0}\n  ~~ Ingredient Details have been saved successfully!!\n\n{0}\n ",
                                   "******************************************************\n ", Console.ForegroundColor);
-                Console.WriteLine(ingredient.ToString());
+                
 
             }
 
@@ -86,8 +87,7 @@ namespace gumedeMariamST10232868PartOne
 
             {
                
-                Console.WriteLine($"This is the recipe for: >>  \n\n ~~~ INGREDIENTS ~~~ \n\n{arrQuantity[i]} " +
-                    $"{arrUnit[i]} {ArrIngredients[i]}" );
+                Console.WriteLine($"This is the recipe for: >>  \n\n ~~~ INGREDIENTS ~~~ \n\n{arrQuantity[i]} {arrUnit[i]} {ArrIngredients[i]}" );
             }
             // Set the Foreground color to blue
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -113,46 +113,52 @@ namespace gumedeMariamST10232868PartOne
                 if (factor == 1)
                 {
                     factor= quantity*0.5;
-                    arrQuantity[i] = factor;
+                    arrScaledFactor[i] = factor;
+                    
                 }
                 else if (factor == 2)
                 {
                     factor = quantity * 2;
-                    arrQuantity[i] = factor;
+                    arrScaledFactor[i] = factor;
 
                 }
                 else if (factor == 3)
                 {
                     factor = quantity * 3;
-                    arrQuantity[i] = factor;
+                    arrScaledFactor[i] = factor;
 
                 }
-                //if ((double)arrQuantity[i] == ingredient.Quantity)
-                //{
-                //    arrQuantity[i] = factor;
-                //}
+                
             }
 
             Console.WriteLine($"Recipe scaled by factor of {factor}.\n\n");
-            DisplayRecipe();
+            //DisplayRecipe();
 
-            //for (int i = 0; i < arrQuantity.Count; i++)
+            for (int i = 0; i < arrQuantity.Count; i++)
 
-            //{
+            {
 
-            //    Console.WriteLine($"This is the recipe for: >>  \n\n ~~~ INGREDIENTS ~~~ \n\n{factor} " +
-            //        $"{arrUnit[i]} {ArrIngredients[i]}");
-            //}
-            
-            //Console.Write("\n\nSTEPS >> ");
+                Console.WriteLine($"This is the recipe for: >>  \n\n ~~~ INGREDIENTS ~~~ \n\n {arrScaledFactor[i]} " +
+                    $"{arrUnit[i]} {ArrIngredients[i]}");
+            }
 
-            //for (int j = 0; j < arrDescription.Count; j++)
-            //{
-            //    Console.WriteLine($"{j + 1} {arrDescription[j]}");
-            //}
+            Console.Write("\n\nSTEPS >> ");
+
+            for (int j = 0; j < arrDescription.Count; j++)
+            {
+                Console.WriteLine($"{j + 1} {arrDescription[j]}");
+            }
 
         }
-
+        public static void ResetFactor()
+        {
+            for (int i = 0; i < arrQuantity.Count; i++)
+            {
+                arrScaledFactor.Insert(i, arrQuantity[i]);
+            }
+            Console.WriteLine("Quantities have been reset to it's original value !! ");
+        }
+        //creating a method that clears all the data
         public void ClearRecipe()
         {
 
@@ -161,6 +167,7 @@ namespace gumedeMariamST10232868PartOne
             arrDescription.Clear();
             arrQuantity.Clear();
             Console.WriteLine("ALL DATA HAS BEEN SUCCESSFULLY CLEARED");
+            //calling the EnterIngredients method
             EnterIngredients();
 
         }
