@@ -10,8 +10,8 @@ namespace gumedeMariamST10232868PartOne
     {
 
         //declaring variables 
-        private int numOfIngredients, quantity, numOfSteps, option = 0;//field
-        private string nameOfIngredient, descrip, name,recipeName;//field
+        private int numOfIngredients, quantity, numOfSteps;//field
+        private string nameOfIngredient, descrip;//field
         private String unitOfMeasurement;//field
 
         //creating a default constructor
@@ -58,23 +58,13 @@ namespace gumedeMariamST10232868PartOne
             get { return numOfSteps; }
             set { numOfSteps = value; }
         }
-        //creating a parametized constructor
-        public IngredientData(string recipeName, string nameOfIngredient, int quantity, string unitOfMeasurement, int numOfSteps, String descrip)
-        {   //creating an instance of itself
-            this.quantity = quantity;
-            this.numOfSteps = numOfSteps;
-            this.recipeName = recipeName;
-            this.nameOfIngredient = nameOfIngredient;
-            this.descrip = descrip;
-            this.unitOfMeasurement = unitOfMeasurement;
-        }
-
+       
         //creating a display methods to display user output
         public String ToString()
         {
-            string ingredient = string.Format("Recipe For\t\t\t : {0}\nIngredient Name\t\t\t : {1}\nQuantity\t\t\t : " +
-                "{2}\nUnit of Measurement\t\t : {3}\nDirections\t\t\t : {4}",
-                recipeName, IngredientName, Quantity, MeasurementUnit, Description);
+            string ingredient = string.Format("\n\nRecipe For\t\t\t :  \nIngredient Name\t\t\t : {1}\nQuantity\t\t\t : " +
+                "{2}\nUnit of Measurement\t\t : {3}\nDirections\t\t\t : {4}\n\n",
+                 IngredientName, Quantity, MeasurementUnit, Description);
 
             return (ingredient);
         }
